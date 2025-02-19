@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: Zain, ui-serif, Georgia, Cambria, "Times New Roman", Times,
+    serif;
+}
