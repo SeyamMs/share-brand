@@ -85,6 +85,7 @@
 
                     if (valid) {
                         var dailyIncome = this.avgMonthlyIncome / 30;
+                        var dailyRental = this.monthlyRental / 30;
                         var category = 'F';
                         var lowerBound = 0;
                         var forcastedProfit = 0;
@@ -115,7 +116,7 @@
                         this.forcastedProfit = this.profitPercentage * lowerBound * 20 * 12;
 
                         this.qualified = true;
-                        if (dailyIncome / this.monthlyRental <= 1.6) {
+                        if (dailyIncome / monthlyRental < 10) {
                             this.qualified = false;
                         } 
                         if (this.forcastedProfit / (this.monthlyRental * 12) <= 1.3) {
