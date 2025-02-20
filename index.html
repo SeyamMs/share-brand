@@ -116,7 +116,7 @@
                         this.forcastedProfit = this.profitPercentage * lowerBound * 20 * 12;
 
                         this.qualified = true;
-                        if (dailyIncome / monthlyRental < 10) {
+                        if (dailyIncome / dailyRental < 10) {
                             this.qualified = false;
                         } 
                         if (this.forcastedProfit / (this.monthlyRental * 12) <= 1.3) {
